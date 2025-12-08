@@ -1,0 +1,226 @@
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+.btn {
+    padding: 0.7rem 1.5rem;
+    border: 0.1rem solid #f0f0f0;;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+#envato-market {
+    width: 100vw;
+    height: 5vh;
+    background-color: #252525;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+#logo > img {
+    height: 80%;
+}
+#logo > p  > span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#envato-market > a {
+    color: #ffffff;
+    background-color: #7db847;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: fit-content;
+    margin-right: 1rem;
+}
+
+
+header {
+    width: 100vw;
+}
+header > div {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #013a01;
+    color: white;
+    font-size: 1rem;
+    gap: 5vw;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > div:nth-of-type(1) {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bokifa-logo {
+    width: auto;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+#bokifa-logo > img {
+    height: 50%;
+}
+#bokifa-logo > p {
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #013a01;
+    font-weight: bold;
+}
+form {
+    width: auto;
+    height: 50%;
+    display: flex;
+    gap: 0;
+}
+form > select {
+    width: 10vw;
+    font-size: 1rem;
+    color: #afafaf;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    outline: 0;
+    padding-left: 1rem;
+}
+form > select > option {
+    font-size: 1rem;
+    color: #afafaf;
+    background-color: white;
+}
+form > input {
+    background-color:  #f0f0f0;
+    border: none;
+    outline: none;
+    width: 20vw;
+    padding-left: 1rem;
+}
+form > input::placeholder {
+    font-size: 1rem;
+    color: #afafaf;
+}
+form > div {
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 0 2rem 2rem 0;
+}
+form > div > button {
+    height: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+}
+#eng-usd-line {
+    width: auto;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+#eng-usd-line > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#eng-usd-line > div > p {
+    font-size: 0.8rem;
+    color: #afafaf;
+}
+#eng-usd-line > div > p:nth-of-type(1) {
+    border-right: 0.1rem solid #f0f0f0;
+    padding-right: 1rem;
+}
+#eng-usd-line > div > p > i {
+    padding-left: 0.1rem;
+}
+#eng-usd-line > i {
+    font-size: 1.2rem;
+    color: #6d6d6d;
+}
+
+nav > div:nth-of-type(2) {
+    width: 100%;
+    height: 5vh;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.11rem solid #f0f0f0;
+}
+#nav-links {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+#nav-links > a {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+}
+#nav-links > a > i {
+    font-size: 0.8rem;
+    align-self: flex-start;
+}
+nav > div:nth-of-type(2) > p {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+nav > div:nth-of-type(2) > p > span {
+    font-weight: bold;
+    padding-left: 0.1rem;
+}
+
