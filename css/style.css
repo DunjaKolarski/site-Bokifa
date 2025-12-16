@@ -397,7 +397,7 @@ main {
 }
 
 
-#weeks-highlights {
+#weeks-highlights, #bestselling-books {
     width: 100%;
     height: 80vh;
     display: flex;
