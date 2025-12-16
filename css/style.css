@@ -544,3 +544,45 @@ main {
     font-size: 1.1rem;
     color: #000000;
 }
+
+
+#fav-thriller-stories {
+    width: 100%;
+    height: 60vh;
+}
+#fav-thriller-stories > div {
+    height: 80%;
+    background-image: url("/assets/thriller-back.jpg");
+    background-repeat: no-repeat;      
+    background-position: center;      
+    background-size: cover;  
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    padding-left: 10vh;
+}
+#fav-thriller-stories > div > div {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#fav-thriller-stories > div > div > p:nth-of-type(1) {
+    font-size: 0.8rem;
+    color: #c1ff2f;
+}
+#fav-thriller-stories > div > div > h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+#fav-thriller-stories > div > div > p:nth-of-type(2) {
+    font-size: 1rem;
+    color: #ffffff;    
+}
+#fav-thriller-stories > div > div > a {
+    color: #000000;
+    background-color: white;
+}
