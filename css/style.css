@@ -397,7 +397,7 @@ main {
 }
 
 
-#weeks-highlights, #bestselling-books, #half-price-books {
+#weeks-highlights, #bestselling-books, #half-price-books, #picks {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -657,3 +657,125 @@ main {
     font-size: 1rem;
     color: #63c963;
 }
+
+
+#picks {
+    background-color: #f5efe3;
+}
+#picks > div:nth-of-type(2) {
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+#picks-main-sec {
+    position: relative;
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+#picks-main-img {
+    width: 48%;
+    height: 90%;
+    position: relative;
+}
+#picks-main-img > img {
+    width: 80%;
+    border-radius: 1rem;
+}
+#picks-main-sec > div:nth-of-type(2) {
+    width: 48%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+#review-pick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+#review-pick p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+}
+#review-pick i {
+    font-size: 0.8rem;
+    color: #929292;
+}
+#review-pick .star-fill {
+    color: #dfb47c;
+}
+#picks-main-sec > div:nth-of-type(2) > h3 {
+    width: 80%;
+    font-size: 1.3rem;
+    color: #000000;
+}
+#picks-main-sec > div:nth-of-type(2) > p:nth-of-type(2) {
+    width: 80%;
+    font-size: 1rem;
+    color: #000000;
+
+}
+
+#picks-other-sec {
+    width: 48%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+#picks-other-sec > div {
+    width: 45%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+#picks-other-sec > div > img {
+    width: 18%;
+    border-radius: 0.5rem;
+}
+.pick-other {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.pick-other-rev {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2rem;
+}
+.pick-other-rev p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+}
+.pick-other-rev i {
+    font-size: 0.8rem;
+    color: #929292;
+}
+.pick-other-rev .star-fill {
+    color: #dfb47c;
+}
+.pick-other .book-title {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+.underline {
+    border-bottom: 0.1rem solid #c9c9c9;
+}
+
