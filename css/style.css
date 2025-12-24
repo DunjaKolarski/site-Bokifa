@@ -397,7 +397,7 @@ main {
 }
 
 
-#weeks-highlights, #bestselling-books, #half-price-books, #picks {
+#weeks-highlights, #bestselling-books, #half-price-books, #picks, #client-says {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -828,5 +828,128 @@ main {
 .line-author > p {
     font-size: 1rem;
     font-weight: bold;
+    color: #000000;
+}
+
+
+#client-says {
+    position: relative;
+}
+#client-says > h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-left: 1rem;
+}
+#reviews-summary {
+    position: absolute;
+    right: 5vw;
+    top: 2vh;
+    width: 13vw;
+    height: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #057705;
+    border-radius: 50%;
+    z-index: 5;
+}
+#reviews-summary i {
+    font-size: 1rem;
+}
+#reviews-summary .star-fill {
+    color: #dfb47c;
+}
+#reviews-summary > p:nth-of-type(1) {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#reviews-summary > p:nth-of-type(1) > span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+#reviews-summary > p:nth-of-type(2) {
+    font-size: 0.7rem;
+    color: #ffffff;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#client-r-line {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    background-color: #f5efe3;
+    padding-left: 15vw;
+    margin: 0 1rem;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+#client-r-line::-webkit-scrollbar {
+    display: none;         
+}
+#client-r-line:active {
+    cursor: grabbing;
+}
+.client-r {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    z-index: 100;
+}
+.client-r > div:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #c9c9c9;
+}
+.client-r > div:nth-of-type(1) > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+}
+.client-r > div:nth-of-type(1) > div i {
+    font-size: 0.8rem;
+    color: #929292;
+}
+.client-r > div:nth-of-type(1) > div .green-star-fill {
+    color: #057705;
+}
+.client-date {
+    font-size: 0.8rem;
+    color: #929292;
+}
+.client-r > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.client-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.client-review {
+    font-size: 1rem;
     color: #000000;
 }
