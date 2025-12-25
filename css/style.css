@@ -90,7 +90,7 @@ nav > div:nth-of-type(1) {
     justify-content: space-between;
     align-items: center;
 }
-#bokifa-logo {
+.bokifa-logo {
     width: auto;
     height: 80%;
     display: flex;
@@ -99,10 +99,10 @@ nav > div:nth-of-type(1) {
     gap: 0.5rem;
     margin-left: 1rem;
 }
-#bokifa-logo > img {
+.bokifa-logo > img {
     height: 50%;
 }
-#bokifa-logo > p {
+.bokifa-logo > p {
     font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #013a01;
@@ -1080,4 +1080,91 @@ main {
 #stay-in > div > a > img {
     width: 80%;
     border-radius: 50%;
+}
+
+
+footer {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;;
+}
+
+#top-footer {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+#top-footer > div:nth-of-type(1) {
+    width: 30vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+footer .bokifa-logo {
+    height: 20%;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+#bokifa-about, #bookifa-email {
+    width: 80%;
+    font-size: 1rem;
+    color: #000000;
+}
+#bokifa-phone-num {
+    font-size: 2rem;
+    color: #dfb47c;
+}
+
+.footer-links {
+    width: 15vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-links > h4 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #000000;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #c9c9c9;
+}
+.footer-links > a {
+    font-size: 1rem;
+    color: #000000;
+}
+
+#down-footer {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1rem solid #c9c9c9;
+    margin: 0 1rem;
+}
+#down-footer > p {
+    font-size: 1rem;
+    color: #000000;
+}
+#down-footer > p > span {
+    color: #057705;
+}
+#down-footer > div {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#down-footer > div > a {
+    width: 13%;
+}
+#down-footer > div > a > img {
+    width: 100%;
 }
