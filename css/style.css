@@ -1015,7 +1015,7 @@ main {
 .news-img > p > .green {
     color: #057705;
 }
-.news > h3 {
+.news > a {
     font-size: 1.3rem;
     align-self: flex-start;
     color: #000000;
