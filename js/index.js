@@ -1,3 +1,33 @@
+const promoTexts = document.querySelectorAll(".promo-text");
+const prevPromo = document.getElementById("promo-prev");
+const nextPromo = document.getElementById("promo-next");
+
+let promoIndex = 0;
+
+function showPromo(index) {
+  promoTexts.forEach((text, i) => {
+    text.classList.toggle("active", i === index);
+  });
+}
+
+nextPromo.onclick = () => {
+  promoIndex++;
+  if (promoIndex >= promoTexts.length) {
+    promoIndex = 0; 
+  }
+  showPromo(promoIndex);
+};
+
+prevPromo.onclick = () => {
+  promoIndex--;
+  if (promoIndex < 0) {
+    promoIndex = promoTexts.length - 1; 
+  }
+  showPromo(promoIndex);
+};
+
+showPromo(promoIndex);
+
 
 const slides = document.querySelectorAll(".hero-slide");
 const dots = document.querySelectorAll(".dot");

@@ -63,7 +63,7 @@ a {
 header {
     width: 100vw;
 }
-header > div {
+#promo-line {
     width: 100%;
     height: 4vh;
     display: flex;
@@ -73,6 +73,16 @@ header > div {
     color: white;
     font-size: 1rem;
     gap: 5vw;
+}
+.promo-text-wrapper {
+    width: 30%;
+    text-align: center;
+}
+.promo-text {
+    display: none;
+}
+.promo-text.active {
+    display: block;
 }
 
 nav {
