@@ -261,7 +261,7 @@ main {
 .hero-slide {
     display: none;
     text-align: center;
-    margin: 0 1rem;
+    padding: 0 1rem;
 }
 .hero-slide.active {
     width: 100%;
@@ -465,7 +465,7 @@ main {
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 0.5rem 0.8rem;
-    white-space: nowrap
+    white-space: nowrap;
 }
 .review p {
     font-size: 0.8rem;
@@ -585,6 +585,7 @@ main {
 #fav-thriller-stories > div > div > a {
     color: #000000;
     background-color: white;
+    border: none;
 }
 
 
@@ -976,6 +977,7 @@ main {
 }
 #benefits > div > h4 {
     font-size: 1.1rem;
+    color: #000000;
 }
 #benefits > div > p {
     font-size: 1rem;
