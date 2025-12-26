@@ -602,6 +602,7 @@ main {
 #shop-now {
     width: 100%;
     height: 30vh;
+    background: linear-gradient(to bottom, #ffffff 50%, #f5efe3 50%);
 }
 #shop-now > div {
     height: 100%;
