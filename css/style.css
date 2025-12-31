@@ -795,7 +795,9 @@ main {
 
 #featured-authors {
     width: 100%;
-    height: 30vh;
+    height: auto;
+    margin: 2rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -978,16 +980,19 @@ main {
 }
 #benefits > div {
     width: 20vw;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
+    text-align: center;
 }
 #benefits > div > img {
     width: 25%;
 }
 #benefits > div > h4 {
+    height: 30%;
     font-size: 1.1rem;
     color: #000000;
 }
@@ -1181,4 +1186,432 @@ footer .bokifa-logo {
 }
 #down-footer > div > a > img {
     width: 100%;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    #envato-market {
+        height: 4vh;
+    }
+
+    #promo-line{
+        height: 3vh;
+    }
+    nav > div:nth-of-type(1) {
+        height: 6vh;
+    }
+    nav > div:nth-of-type(2) {
+        height: 3vh;
+    }
+
+    #hero, #weeks-highlights, #top-categories, #bestselling-books, #half-price-books, #picks, #client-says, #news-events {
+        height: 40vh;
+    }
+
+    #fav-thriller-stories {
+        height: 30vh;
+    }
+
+    #shop-now, #featured-authors {
+        height: 20vh;
+    }
+    .shop-sec {
+        padding: 0 2vh;
+    }
+
+    .line-author {
+        flex: 0 0 calc((100% - (3 * 1.5rem)) / 4);
+    }
+
+    #authors {
+        max-width: 90%;
+    }
+
+    .client-r {
+        gap: 0.5rem;
+    }
+    .client-review {
+        font-size: 0.8rem;
+    }
+
+    #benefits, #stay-in {
+        height: 15vh;
+    }
+
+    footer {
+        height: 35vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) { 
+    html {
+        font-size: 10px;
+    }
+
+    #envato-market {
+        height: 4vh;
+    }
+
+    #promo-line{
+        height: 3vh;
+    }
+    .promo-text-wrapper {
+        width: 60%;
+    }
+    nav > div:nth-of-type(1), nav > div:nth-of-type(2) {
+        height: 15vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .bokifa-logo {
+        width: 80%;
+        height: 30%;
+    }
+    form {
+       height: 20%;
+       margin-left: 1rem;
+    }
+    form > select {
+        width: 15vw;
+    }
+    form > input {
+        width: 30vw;
+    }
+    .btn {
+        padding: 0.3rem 1rem;
+    }
+    #nav-links, nav > div:nth-of-type(2) > p {
+        width: 80%;
+        height: 30%;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #hero, #weeks-highlights, #top-categories, #bestselling-books, #half-price-books, #client-says, #news-events {
+        height: 50vh;
+    }
+    .hero-text {
+        width: 40%;
+    }
+    .hero-text > h1 {
+        font-size: 2.5rem;
+    }
+    .hero-offer {
+        width: 15vw;
+        height: 15vw;
+    }
+    .hero-offer > p {
+        width: 40%;
+        font-size: 0.8rem;
+    }
+    .hero-images {
+        width: 40%;
+    }
+
+    .books-lay > div {
+        gap: 0.5rem;
+    }
+    .review {
+        gap: 0.1rem;
+        padding: 0.2rem 0.3rem;
+    }
+    .review  i, .review p {
+        font-size: 0.5rem;
+    }
+    .book-title {
+        height: 4rem;
+    }
+    .book-title, .author, .book-price {
+        font-size: 0.8rem;
+    }
+
+    #cat-links {
+        height: 70%;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    #cat-links > a {
+        width: 20%;
+        height: 40%;
+    }
+    #cat-links > a > img {
+        width: 60%;
+    }
+
+    #fav-thriller-stories {
+        height: 30vh;
+    }
+    #fav-thriller-stories > div {
+        padding-left: 5vh;
+    }
+    #fav-thriller-stories > div > div {
+        width: 70%;
+    }
+
+    #shop-now {
+        height: 60vh;
+    }
+    #shop-now > div { 
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .shop-sec {
+        width: 70%;
+    }
+    .shop-sec > div {
+        gap: 0.5rem;
+    }
+
+    #picks {
+        height: 100vh;
+    }
+    #picks > div:nth-of-type(2) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    #picks-main-sec, #picks-other-sec {
+        width: 80%;
+        height: 45%;
+    }
+
+    .line-author {
+        flex: 0 0 calc((100% - (1 * 1.5rem)) / 2);
+    }
+    #authors {
+        max-width: 95%;
+    }
+    #left, #right {
+        font-size: 1.5rem;
+    }
+
+    #reviews-summary {
+        width: 28vw;
+        height: 12vh;
+        top: 0;
+    }
+    #reviews-summary > p:nth-of-type(1) {
+        font-size: 1rem;
+    }
+    #reviews-summary > p:nth-of-type(1) > span, #reviews-summary i {
+        font-size: 0.8rem;
+    }
+
+    .client-r {
+        height: 85%;
+        padding: 0.8rem;
+        gap: 0.5rem;
+    }
+    .client-r > div:nth-of-type(1) > div {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+    .client-title {
+        font-size: 0.9rem;
+    }
+    .client-review {
+        font-size: 0.7rem;
+    }
+
+    #news-events {
+        height: 80vh;
+    }
+    #news-events > div:nth-child(2) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0;
+    }
+    .news {
+        width: 50vw;
+    }
+
+    #stay-in {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+    }
+    #stay-in > h2, #stay-in > p, #stay-in > form, #stay-in > div {
+        width: 45%;
+    }
+    #stay-in > form {
+        height: 15%;
+        margin: 0;
+    }
+    #stay-in > form > input{
+        width: 50%;
+    }
+    #stay-in > form > button {
+        width: 50%;
+    }
+    #stay-in > div > a {
+        width: 20%;
+    }
+
+    footer {
+        height: 35vh;
+    }
+    #bokifa-about, #bookifa-email {
+        font-size: 0.8rem;
+    }
+    #bokifa-phone-num {
+        font-size: 1rem;
+    }
+    .footer-links > h4 {
+        font-size: 0.9rem;  
+    }
+    .footer-links > a {
+        font-size: 0.8rem;  
+    }
+    #down-footer > p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #envato-market {
+        height: 10vh;
+    }
+
+    #promo-line{
+        height: 9vh;
+    }
+    nav > div:nth-of-type(1) {
+        height: 15vh;
+    }
+    nav > div:nth-of-type(2) {
+        height: 10vh;
+    }
+
+    #hero, #weeks-highlights, #top-categories, #bestselling-books, #half-price-books, #picks, #client-says, #news-events {
+        height: 100vh;
+    }
+
+    #fav-thriller-stories {
+        height: 90vh;
+    }
+
+    #shop-now, #featured-authors {
+        height: 50vh;
+    }
+    .shop-sec {
+        padding: 0 4vh;
+    }
+
+    .book-title, .author {
+        font-size: 0.9rem;
+    }
+
+    .client-r {
+        gap: 0.5rem;
+    }
+    .client-review {
+        font-size: 0.6rem;
+    }
+
+    #benefits, #stay-in {
+        height: 30vh;
+    }
+
+    footer {
+        height: 80vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {  
+    #envato-market {
+        height: 10vh;
+    }
+
+    #promo-line{
+        height: 9vh;
+    }
+    nav > div:nth-of-type(1) {
+        height: 25vh;
+    }
+    nav > div:nth-of-type(2) {
+        height: 20vh;
+    }
+
+    #hero, #weeks-highlights, #top-categories, #bestselling-books, #half-price-books, #picks, #client-says, #news-events {
+        height: 100vh;
+    }
+
+    #fav-thriller-stories {
+        height: 60vh;
+    }
+     
+    #shop-now > div { 
+        flex-direction: row;
+    }
+    .shop-sec {
+        width: 60%;
+    }
+
+    #picks > div:nth-of-type(2){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #picks-main-sec, #picks-other-sec {
+        width: 48%;
+        height: 100%;
+    }
+    
+    .book-title, .author {
+        font-size: 0.9rem;
+    }
+
+    #featured-authors {
+        height: 80vh;
+    }
+
+    #reviews-summary {
+        top: 2vh;
+        width: 13vw;
+        height: 13vw;
+    }
+    .client-r {
+        gap: 0.5rem;
+    }
+    .client-r > div:nth-of-type(1) > div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .client-review {
+        font-size: 0.6rem;
+    }
+
+    #news-events > div:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 1rem;
+    }
+    .news {
+        width: 32vw;
+    }
+
+    #benefits, #stay-in {
+        height: 40vh;
+    }
+
+    footer {
+        height: 80vh;
+    }
 }

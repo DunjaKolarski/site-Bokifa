@@ -45,27 +45,46 @@ const prevBtn = document.getElementById("left");
 const nextBtn = document.getElementById("right");
 
 let index = 0;
-const visible = 8;
-
-function update() {
-    const cardWidth = cards[0].offsetWidth;
-    const gap = 24;
-    track.style.transform = `translateX(-${index * (cardWidth + gap)}px)`;
+function getVisible() {
+    if (window.innerWidth < 768) {
+        return 2;      
+    } else if (window.innerWidth < 1025) {
+        return 4;    
+    } else {
+        return 8;     
+    }
 }
 
-nextBtn.onclick = () => {
+function moveSlider() {
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 24; 
+    track.style.transform = "translateX(-" + index * (cardWidth + gap) + "px)";
+}
+
+right.onclick = function () {
     index++;
-    if (index > cards.length - visible) index = 0;
-    update();
+    if (index > cards.length - getVisible()) {
+        index = 0;
+    }
+    moveSlider();
 };
 
-prevBtn.onclick = () => {
+left.onclick = function () {
     index--;
-    if (index < 0) index = cards.length - visible;
-    update();
+    if (index < 0) {
+        index = cards.length - getVisible();
+    }
+    moveSlider();
 };
 
-update();
+window.onresize = function () {
+    index = 0;
+    moveSlider();
+};
+
+moveSlider();
+
+
 
 
 const slider = document.getElementById("client-r-line");
